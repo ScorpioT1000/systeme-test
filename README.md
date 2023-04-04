@@ -9,6 +9,7 @@ Test app
 4. Run ```php bin/console doctrine:schema:update --force```
 5. Run ```npm run dev```
 6. Copy .env.dist as .env and configure the params
+7. Run ```php bin/console app:initialize-demo``` to create demo data. You can also use ```php bin/console app:drop-data``` to clean db
 
 # Installation (production environment)
 
