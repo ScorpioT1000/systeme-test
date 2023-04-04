@@ -39,65 +39,65 @@ class RegionTax
         ];
     }
 
-	public function getId(): int
-	{
-		return $this->id; 
-	}
+    public function getId(): int
+    {
+        return $this->id; 
+    }
 
     /**
      * @return string 2-symbol code
      */
-	public function getRegionCode(): string
-	{
-		return $this->regionCode; 
-	}
+    public function getRegionCode(): string
+    {
+        return $this->regionCode; 
+    }
 
     /**
      * @param string $value 2-symbol code
      * @return RegionTax 
      */
-	public function setRegionCode(string $value): self
-	{
-		$this->regionCode = $value;
+    public function setRegionCode(string $value): self
+    {
+        $this->regionCode = $value;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @return string e.g. 'DEXXXXXXXXX'
-	 */
-	public function getTaxNumberMask(): string
-	{
-		return $this->taxNumberMask; 
-	}
+    /**
+     * @return string e.g. 'DEXXXXXXXXX'
+     */
+    public function getTaxNumberMask(): string
+    {
+        return $this->taxNumberMask; 
+    }
 
-	/**
-	 * @param string $value e.g. 'DEXXXXXXXXX'
-	 * @return static
-	 */
-	public function setTaxNumberMask(string $value)
-	{
-		$this->taxNumberMask = $value;
+    /**
+     * @param string $value e.g. 'DEXXXXXXXXX'
+     * @return static
+     */
+    public function setTaxNumberMask(string $value)
+    {
+        $this->taxNumberMask = $value;
 
-		return $this;
-	}
+        return $this;
+    }
 
     /**
      * @return BigDecimal Absolute number like 0.15
      */
-	public function getVatTax(): BigDecimal
-	{
-		return BigDecimal::of($this->vatTax); 
-	}
+    public function getVatTax(): BigDecimal
+    {
+        return BigDecimal::of($this->vatTax); 
+    }
 
     /**
      * @param BigDecimal $value Absolute number like 0.15
      * @return RegionTax 
      */
-	public function setVatTax(BigDecimal $value): self
-	{
-		$this->vatTax = (string)$value;
+    public function setVatTax(BigDecimal $value): self
+    {
+        $this->vatTax = (string)$value;
 
-		return $this;
-	}
+        return $this;
+    }
 }
