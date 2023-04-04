@@ -38,32 +38,32 @@ class Product
         ];
     }
 
-	/**
-	 * @return int 
-	 */
-	public function getId(): int
-	{
-		return $this->id; 
-	}
+    /**
+     * @return int 
+     */
+    public function getId(): int
+    {
+        return $this->id; 
+    }
 
-	/**
-	 * @return string 
-	 */
-	public function getName(): string
-	{
-		return $this->name; 
-	}
+    /**
+     * @return string 
+     */
+    public function getName(): string
+    {
+        return $this->name; 
+    }
 
-	/**
-	 * @param string $value 
-	 * @return static
-	 */
-	public function setName(string $value)
-	{
-		$this->name = $value;
+    /**
+     * @param string $value 
+     * @return static
+     */
+    public function setName(string $value)
+    {
+        $this->name = $value;
 
-		return $this;
-	}
+        return $this;
+    }
 
     public function getTargetPrice(): Money
     {
