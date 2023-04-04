@@ -16,7 +16,7 @@ Test app
 1. git clone https://github.com/ScorpioT1000/systeme-test.git
 2. Install nginx + php 8.1 + php8.1-fpm + postgresql + node + npm 
 3. Run ```composer install``` and ```npm install```
-4. Copy .env.dist as .env and configure the params
+4. Copy .env.dist as .env and configure the params and set APP_ENV=prod
 5. Run ```npm run build```
 6. Run ```php bin/console doctrine:schema:update --force```
 
